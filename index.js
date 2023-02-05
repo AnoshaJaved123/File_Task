@@ -13,6 +13,7 @@ app.use(cors())
 
 app.use('/uploads', express.static('uploads'));
 
+app.use('/api/userAuth', require('./Routes/userAuth'))
 
 
 app.use('/api/itemAuth', require('./Routes/itemAuth'));
